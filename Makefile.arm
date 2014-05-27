@@ -1,0 +1,72 @@
+include ./config_arm.mk
+
+CC=$(CROSS)gcc
+LD=$(CROSS)ld
+AR=$(CROSS)ar
+STRIP=$(CROSS)strip
+
+EXLUSIVE_MSG=EXLUSIVE_MSG
+
+CFLAGS=-D$(EXLUSIVE_MSG) -D$(ARCH) $(DEBUG) -O2 -Wall -I./include
+CORECFLAGS=$(CFLAGS)
+LIBCFLAGS=$(CFLAGS) -fpic
+CORELDFLAGS= -L./lib -lemi -lpthread
+LIBLDFLAGS=-shared
+STATIC ?=
+
+ifeq ($(STATIC),)
+LIBFILES=./lib/libemi.so ./lib/libemi.a
+else
+LIBFILES=./lib/libemi.a
+endif
+
+#SRCDIRS	= .
+#SRCS=$(foreach dir,$(SRCDIRS),$(wildcard $(dir)/*.c))
+#OBJS=$(patsubst %,%,$(SRC:.c=.o))
+LIBSRCS=emi_aes.c emi_if.c emi_sock.c emi_config.c emi_dbg.c emi_shmem.c
+LIBOBJS=$(LIBSRCS:.c=.o)
+CORESRCS=emi_core.c
+COREOBJS=$(CORESRCS:.c=.o)
+
+.PHONY:all clean install
+
+all:libemi.so libemi.a emi_core
+
+libemi.so:$(LIBOBJS)
+	@echo LD		libemi.so
+	$(CC) $(LIBLDFLAGS) -o $@ $?
+	@mv $@ ./lib
+
+libemi.a:$(LIBOBJS)
+	@echo AR		libemi.a
+	@$(AR) csr	$@	$?
+	@mv $@ ./lib
+
+emi_core:$(COREOBJS)
+	@echo LD		emi_core
+	@$(CC) $(STATIC) -o $@ $? $(CORELDFLAGS)
+
+$(COREOBJS):$(CORESRCS)
+	@echo CC		$^
+	@$(CC) $(CORECFLAGS) -c $^
+
+$(LIBOBJS):$(LIBSRCS)
+	@echo CC		$^
+	@$(CC) $(LIBCFLAGS) -c $^
+
+install:
+	@echo emi_core install
+	@$(STRIP) -s ./lib/* emi_core
+	@mkdir -p $(PREFIX)/bin
+	@cp -av emi_core $(PREFIX)/bin
+	@cp -av ./tools/clemi.sh $(PREFIX)/bin
+	@mkdir -p $(PREFIX)/include/emi
+	@cp -av ./include/*.h $(PREFIX)/include/emi/
+	@mkdir -p $(PREFIX)/lib
+	@cp -av $(LIBFILES) $(PREFIX)/lib
+
+clean:
+	rm *.o ./lib/* emi_core -rf
+
+distclean:
+	rm *.o ./lib/* emi_core Makefile config.mk -rf

@@ -1,0 +1,20 @@
+#!/sbin/runscript
+
+depend() {
+	use logger
+	need net
+}
+
+[ -x /sbin/emi_core ] || exit 0
+
+start() {
+	ebegin "Starting emi_core"
+	start-stop-daemon --start --quiet --exec /sbin/emi_core
+	eend $?
+}
+
+stop() {
+	ebegin "Stopping tftpd"
+	start-stop-daemon --stop --quiet --exec /sbin/emi_core
+	eend $?
+}

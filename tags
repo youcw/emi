@@ -1,0 +1,320 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARCH	config_arm.mk	/^ARCH=arm$/;"	m
+ARCH	config_pc.mk	/^ARCH=x86$/;"	m
+ARRAY_SIZE	emi_dbg.c	99;"	d	file:
+ARRAY_SIZE	include/msg_table.h	27;"	d
+CC	test/Makefile	/^CC=$(CROSS)gcc$/;"	m
+CFLAGS	test/Makefile	/^CFLAGS=-I..\/include\/ -g$/;"	m
+CMD1	test/test.c	49;"	d	file:
+CMD2	test/test.c	50;"	d	file:
+CMD3	test/test.c	51;"	d	file:
+CROSS	config_arm.mk	/^CROSS=arm-linux-$/;"	m
+CROSS	config_pc.mk	/^CROSS=$/;"	m
+DAEMONIZE	emi_core.c	46;"	d	file:
+DEBUG	config_arm.mk	/^DEBUG=$/;"	m
+DEBUG	config_pc.mk	/^DEBUG=$/;"	m
+EMI_DATA_SIZE_PER_MSG	include/emi_config.h	7;"	d
+EMI_HASH_MASK	include/msg_table.h	25;"	d
+EMI_KEY	include/shmem.h	27;"	d
+EMI_MAX_DATA	include/emi_config.h	8;"	d
+EMI_MAX_MSG	include/emi_config.h	6;"	d
+EMI_MSG_CMD_GET	include/emi.h	61;"	d
+EMI_MSG_CMD_REGISTER	include/emi.h	60;"	d
+EMI_MSG_CMD_SUCCEEDED	include/emi.h	62;"	d
+EMI_MSG_FLAG_AES	include/emi.h	64;"	d
+EMI_MSG_FLAG_BLOCK	include/emi.h	54;"	d
+EMI_MSG_FLAG_BLOCK_RETURN	include/emi.h	55;"	d
+EMI_MSG_FLAG_CREATE	include/emi.h	58;"	d
+EMI_MSG_FLAG_NONBLOCK	include/emi.h	56;"	d
+EMI_MSG_TYPE_CMD	include/emi.h	51;"	d
+EMI_MSG_TYPE_DATA	include/emi.h	52;"	d
+EMI_PORT	include/emi_config.h	9;"	d
+FUNC1MSG	test/test.c	45;"	d	file:
+FUNC2MSG	test/test.c	46;"	d	file:
+FUNC3MSG	test/test.c	47;"	d	file:
+GET_PORT	include/emisocket.h	35;"	d
+GET_SIZE	include/shmem.h	53;"	d
+INIT_LIST_HEAD	include/list.h	/^static inline void INIT_LIST_HEAD(struct list_head *list)$/;"	f
+LDFLAGS	test/Makefile	/^LDFLAGS= -L..\/lib\/ -lemi$/;"	m
+LIST_HEAD	include/list.h	30;"	d
+LIST_HEAD_INIT	include/list.h	28;"	d
+LOAD32H	emi_aes.c	25;"	d	file:
+LOCK	include/shmem.h	29;"	d
+LOCKBASENAME	include/shmem.h	30;"	d
+NOCREATE	include/emi.h	/^	NOCREATE=0,$/;"	e	enum:create_type
+PREFIX	config_arm.mk	/^PREFIX=..\/libs\/$/;"	m
+PREFIX	config_pc.mk	/^PREFIX=..\/libs\/pclib$/;"	m
+RORc	emi_aes.c	9;"	d	file:
+SINGLIZE	emi_core.c	47;"	d	file:
+SPACE_BUSY	include/shmem.h	/^	SPACE_BUSY,$/;"	e	enum:__anon1
+SPACE_FREE	include/shmem.h	/^	SPACE_FREE,$/;"	e	enum:__anon1
+STATIC	config_arm.mk	/^STATIC=$/;"	m
+STATIC	config_pc.mk	/^STATIC=-static$/;"	m
+STORE32H	emi_aes.c	18;"	d	file:
+SYSPORT	include/emisocket.h	34;"	d
+SYSTEM_LOCK	include/emi_types.h	41;"	d
+TD0	include/emi_aes.h	/^static const unsigned long TD0[256] = {$/;"	v
+TD1	include/emi_aes.h	/^static const unsigned long TD1[256] = {$/;"	v
+TD2	include/emi_aes.h	/^static const unsigned long TD2[256] = {$/;"	v
+TD3	include/emi_aes.h	/^static const unsigned long TD3[256] = {$/;"	v
+TE0	include/emi_aes.h	/^static const unsigned long TE0[256] = {$/;"	v
+TE1	include/emi_aes.h	/^static const unsigned long TE1[256] = {$/;"	v
+TE2	include/emi_aes.h	/^static const unsigned long TE2[256] = {$/;"	v
+TE3	include/emi_aes.h	/^static const unsigned long TE3[256] = {$/;"	v
+Td0	include/emi_aes.h	307;"	d
+Td1	include/emi_aes.h	308;"	d
+Td2	include/emi_aes.h	309;"	d
+Td3	include/emi_aes.h	310;"	d
+Td4	include/emi_aes.h	/^static const unsigned long Td4[256] = {$/;"	v
+Te0	include/emi_aes.h	302;"	d
+Te1	include/emi_aes.h	303;"	d
+Te2	include/emi_aes.h	304;"	d
+Te3	include/emi_aes.h	305;"	d
+Te4	include/emi_aes.h	/^static const unsigned long Te4[256] = {$/;"	v
+Te4_0	include/emi_aes.h	/^static const unsigned long Te4_0[] = {$/;"	v
+Te4_1	include/emi_aes.h	/^static const unsigned long Te4_1[] = {$/;"	v
+Te4_2	include/emi_aes.h	/^static const unsigned long Te4_2[] = {$/;"	v
+Te4_3	include/emi_aes.h	/^static const unsigned long Te4_3[] = {$/;"	v
+Tks0	include/emi_aes.h	/^static const unsigned long Tks0[] = {$/;"	v
+Tks1	include/emi_aes.h	/^static const unsigned long Tks1[] = {$/;"	v
+Tks2	include/emi_aes.h	/^static const unsigned long Tks2[] = {$/;"	v
+Tks3	include/emi_aes.h	/^static const unsigned long Tks3[] = {$/;"	v
+YESCREATE	include/emi.h	/^	YESCREATE=1$/;"	e	enum:create_type
+__DEBUG_H__	include/debug.h	20;"	d
+__EMI_CONFIG_H__	include/emi_config.h	2;"	d
+__EMI_CRYPT_H__	include/emi_crypt.h	2;"	d
+__EMI_H__	include/emi.h	20;"	d
+__EMI_SEMAPHORE_H__	include/emi_semaphore.h	2;"	d
+__EMI_TYPES_H__	include/emi_types.h	2;"	d
+__INTERFACE_H__	include/emiif.h	21;"	d
+__LIST_H__	include/list.h	22;"	d
+__MSG_TABLE_H__	include/msg_table.h	20;"	d
+__SHMEM_H__	include/shmem.h	20;"	d
+__SOCKET_H__	include/emisocket.h	20;"	d
+__data_list	emi_shmem.c	/^LIST_HEAD(__data_list);$/;"	v
+__emi_data_space_lock	emi_shmem.c	/^elock_t __emi_data_space_lock;$/;"	v
+__emi_hash	include/msg_table.h	/^static inline eu32 __emi_hash(eu32 k){$/;"	f
+__emi_hinsert	include/msg_table.h	/^static inline int __emi_hinsert(struct msg_map **table,struct msg_map *map){$/;"	f
+__emi_hsearch	include/msg_table.h	/^static inline struct msg_map *__emi_hsearch(struct msg_map *table[],struct msg_map *map,int *num){$/;"	f
+__emi_lock	include/emi_semaphore.h	/^static inline void __emi_lock(int *p)$/;"	f
+__emi_msg_register	emi_if.c	/^static int __emi_msg_register(eu32 defined_msg,emi_func func,eu32 flag){$/;"	f	file:
+__emi_msg_space_lock	emi_shmem.c	/^elock_t __emi_msg_space_lock;$/;"	v
+__emi_obtain_consecutive_space	include/shmem.h	/^static inline void *__emi_obtain_consecutive_space(void *base,int size,struct list_head *head,eu32 *num,elock_t *lock,eu32 consec_num){$/;"	f
+__emi_obtain_space	include/shmem.h	/^static inline void *__emi_obtain_space(void *base,int size,struct list_head *head,eu32 *num,elock_t *lock){$/;"	f
+__emi_return_space	include/shmem.h	/^static inline int __emi_return_space(void *addr,struct list_head *head,eu32 *num,elock_t *lock){$/;"	f
+__emi_unlock	include/emi_semaphore.h	/^static inline void __emi_unlock(int *p)$/;"	f
+__emi_unlock	include/emi_semaphore.h	/^static inline void __emi_unlock(int *p){$/;"	f
+__es16	include/emi_types.h	/^typedef int16_t __es16;$/;"	t
+__es32	include/emi_types.h	/^typedef int32_t __es32;$/;"	t
+__es8	include/emi_types.h	/^typedef int8_t __es8;$/;"	t
+__eu16	include/emi_types.h	/^typedef uint16_t __eu16;$/;"	t
+__eu32	include/emi_types.h	/^typedef uint32_t __eu32;$/;"	t
+__eu8	include/emi_types.h	/^typedef uint8_t __eu8;$/;"	t
+__func_list	emi_if.c	/^LIST_HEAD(__func_list);$/;"	v
+__list_add	include/list.h	/^static inline void __list_add(struct list_head *new_lst,$/;"	f
+__list_del	include/list.h	/^static inline void __list_del(struct list_head * prev, struct list_head * next)$/;"	f
+__msg_list	emi_shmem.c	/^LIST_HEAD(__msg_list);$/;"	v
+__num_busy_data	emi_shmem.c	/^eu32 __num_busy_data=0;$/;"	v
+__num_busy_msg	emi_shmem.c	/^eu32 __num_busy_msg=0;$/;"	v
+__obtain_space_num	include/shmem.h	/^static inline int __obtain_space_num(void *base,void *addr,int size){$/;"	f
+addr	include/shmem.h	/^	void *addr;$/;"	m	struct:emi_transfer_buf
+aes_decrypt	emi_aes.c	/^static int aes_decrypt(const unsigned char *ct, unsigned char *pt, ulong32 *dkey, int nr)$/;"	f	file:
+aes_encrypt	emi_aes.c	/^static int aes_encrypt(const unsigned char *pt, unsigned char *ct, ulong32 *ekey,int nr)$/;"	f	file:
+af	include/emisocket.h	/^	int af;$/;"	m	struct:sk_dpr
+base	emi_core.c	/^	void *base;$/;"	m	struct:clone_args	file:
+busy	include/shmem.h	/^	int busy;$/;"	m	struct:emi_transfer_buf
+byte	emi_aes.c	16;"	d	file:
+client_sd	emi_core.c	/^	struct sk_dpr *client_sd;$/;"	m	struct:clone_args	typeref:struct:clone_args::sk_dpr	file:
+client_sd	emi_core.c	/^struct sk_dpr *client_sd=NULL;$/;"	v	typeref:struct:sk_dpr
+clone_args	emi_core.c	/^struct clone_args{$/;"	s	file:
+cmd	include/emi.h	/^	eu32 cmd;$/;"	m	struct:emi_msg
+construct_local_lock_name	emi_shmem.c	/^int construct_local_lock_name(char name[]){$/;"	f
+container_of	include/list.h	113;"	d
+core_shmid	emi_core.c	/^int core_shmid=-1;$/;"	v
+coreprt	emi_core.c	44;"	d	file:
+count	include/emi.h	/^	eu32 count;				\/\/the member is used for count the processes when several processes share one massage.it is internally,do not use it $/;"	m	struct:emi_msg
+create_type	include/emi.h	/^enum create_type {$/;"	g
+critical_shmem_lock	emi_shmem.c	/^elock_t critical_shmem_lock;$/;"	v
+d	include/emisocket.h	/^	int d;$/;"	m	struct:sk_dpr
+data	emi_if.c	/^	void *data;$/;"	m	struct:func_list	file:
+data	include/emi.h	/^	char data[];$/;"	m	struct:emi_msg
+dbg	include/debug.h	29;"	d
+dbg	include/debug.h	48;"	d
+debug_addr	emi_dbg.c	/^void debug_addr(struct emi_addr *addr,char *p){$/;"	f
+debug_addr	include/debug.h	50;"	d
+debug_config	emi_config.c	/^void debug_config(struct emi_config *config){$/;"	f
+debug_config	include/debug.h	58;"	d
+debug_emi_transfer_buf	emi_shmem.c	/^void debug_emi_transfer_buf(struct emi_transfer_buf *buf){$/;"	f
+debug_flag	emi_dbg.c	/^void debug_flag(eu32 flag){$/;"	f
+debug_flag	include/debug.h	49;"	d
+debug_msg	emi_dbg.c	/^void debug_msg(struct emi_msg *msg,int more){$/;"	f
+debug_msg	include/debug.h	51;"	d
+debug_msg_chain	emi_dbg.c	/^void debug_msg_chain(struct msg_map **table,struct msg_map *map){$/;"	f
+debug_msg_chain	include/debug.h	55;"	d
+debug_msg_full_table	emi_dbg.c	/^void debug_msg_full_table(struct msg_map **table){$/;"	f
+debug_msg_full_table	include/debug.h	56;"	d
+debug_msg_map	emi_dbg.c	/^void debug_msg_map(struct msg_map **table,struct msg_map *map){$/;"	f
+debug_msg_map	include/debug.h	53;"	d
+debug_msg_table	emi_dbg.c	/^void debug_msg_table(struct msg_map **table){$/;"	f
+debug_msg_table	include/debug.h	54;"	d
+debug_single_map	emi_dbg.c	/^void debug_single_map(struct msg_map *map){$/;"	f
+debug_single_map	include/debug.h	52;"	d
+dest_addr	include/emi.h	/^	struct emi_addr dest_addr;$/;"	m	struct:emi_msg	typeref:struct:emi_msg::emi_addr
+elock_t	include/emi_types.h	/^typedef es32 elock_t;$/;"	t
+elock_t	include/emi_types.h	/^typedef pthread_mutex_t elock_t;$/;"	t
+emi_accept	emi_sock.c	/^struct sk_dpr *emi_accept(struct sk_dpr *sd,union emi_sock_addr *addr){$/;"	f
+emi_addr	include/emi.h	/^struct emi_addr{$/;"	s
+emi_addr_alloc	emi_if.c	/^struct emi_addr *emi_addr_alloc(){$/;"	f
+emi_addr_free	emi_if.c	/^void emi_addr_free(struct emi_addr *addr){$/;"	f
+emi_aes_decrypt	emi_aes.c	/^int emi_aes_decrypt(unsigned char *ct, unsigned char *pt,unsigned char *key){$/;"	f
+emi_aes_encrypt	emi_aes.c	/^int emi_aes_encrypt(unsigned char *pt,unsigned char *ct,unsigned char *key){$/;"	f
+emi_base_addr	emi_core.c	/^void *emi_base_addr=NULL;$/;"	v
+emi_bind	emi_sock.c	/^int emi_bind(struct sk_dpr *sd,int emi_port){$/;"	f
+emi_close	emi_sock.c	/^void emi_close(struct sk_dpr *sd){$/;"	f
+emi_config	emi_config.c	/^struct emi_config emi_config={$/;"	v	typeref:struct:emi_config
+emi_config	include/emi_config.h	/^struct emi_config{$/;"	s
+emi_connect	emi_sock.c	/^int emi_connect(struct sk_dpr *sd,struct emi_addr *dest_addr,eu32 retry){$/;"	f
+emi_data_size_per_msg	include/emi_config.h	/^	eu32 emi_data_size_per_msg;$/;"	m	struct:emi_config
+emi_data_space_query	include/shmem.h	63;"	d
+emi_fill_addr	emi_if.c	/^int emi_fill_addr(struct emi_addr *addr,char *ip){$/;"	f
+emi_fill_msg	emi_if.c	/^int emi_fill_msg(struct emi_msg *msg,char *dest_ip,void *data,eu32 cmd,eu32 defined_msg,eu32 flag){$/;"	f
+emi_func	include/emi.h	/^typedef int (*emi_func)(struct emi_msg *);$/;"	t
+emi_global	emi_if.c	/^struct emi_global{$/;"	s	file:
+emi_global	emi_if.c	/^}emi_global;$/;"	v	typeref:struct:emi_global
+emi_hash	include/msg_table.h	/^static inline eu32 emi_hash(struct msg_map *map){$/;"	f
+emi_hdelete	include/msg_table.h	/^static inline int emi_hdelete(struct msg_map **table,struct msg_map *map){$/;"	f
+emi_hinsert	include/msg_table.h	/^static inline int emi_hinsert(struct msg_map **table,struct msg_map *map){$/;"	f
+emi_hsearch	include/msg_table.h	/^static inline struct msg_map *emi_hsearch(struct msg_map *table[],struct msg_map *map){$/;"	f
+emi_init	emi_if.c	/^int emi_init(void){$/;"	f
+emi_init_locks	emi_shmem.c	/^void emi_init_locks(void){$/;"	f
+emi_init_msg_space	include/shmem.h	55;"	d
+emi_init_space	emi_shmem.c	/^int emi_init_space(struct list_head *head,eu32 num,es32 bias_base,eu32 size){$/;"	f
+emi_key	include/emi_config.h	/^	eu32 emi_key;$/;"	m	struct:emi_config
+emi_listen	emi_sock.c	/^int emi_listen(struct sk_dpr *sd){$/;"	f
+emi_lock	include/emi_semaphore.h	/^static inline emi_lock(elock_t *p){$/;"	f
+emi_lock	include/emi_semaphore.h	/^static void inline emi_lock(elock_t *p){$/;"	f
+emi_lock_destroy	include/emi_semaphore.h	/^static void inline emi_lock_destroy(elock_t *p){$/;"	f
+emi_lock_init	include/emi_semaphore.h	/^static void inline emi_lock_init(elock_t *p){$/;"	f
+emi_msg	include/emi.h	/^struct emi_msg{$/;"	s
+emi_msg_alloc	emi_if.c	/^struct emi_msg *emi_msg_alloc(eu32 size){$/;"	f
+emi_msg_decode_aes	emi_if.c	/^int emi_msg_decode_aes(struct emi_msg *msg,unsigned char *key){$/;"	f
+emi_msg_encode_aes	emi_if.c	/^int emi_msg_encode_aes(struct emi_msg *msg,unsigned char *key){$/;"	f
+emi_msg_free	emi_if.c	/^void emi_msg_free(struct emi_msg *msg){$/;"	f
+emi_msg_prepare_return_data	emi_if.c	/^int emi_msg_prepare_return_data(struct emi_msg *msg,void *data,eu32 size){$/;"	f
+emi_msg_register	emi_if.c	/^int emi_msg_register(eu32 defined_msg,emi_func func){$/;"	f
+emi_msg_register_blockreturn	include/emiif.h	90;"	d
+emi_msg_register_exclusive	emi_if.c	/^int emi_msg_register_exclusive(eu32 defined_msg,emi_func func){$/;"	f
+emi_msg_send	emi_if.c	/^int emi_msg_send(struct emi_msg *msg){$/;"	f
+emi_msg_send_highlevel	emi_if.c	/^static inline int emi_msg_send_highlevel(char *ipaddr, int msgnum,int send_size,char *send_data, int ret_size,char *ret_data, eu32 cmd,eu32 flags){$/;"	f	file:
+emi_msg_send_highlevel_block	emi_if.c	/^int emi_msg_send_highlevel_block(char *ipaddr, int msgnum,int send_size,void *send_data, eu32 cmd){$/;"	f
+emi_msg_send_highlevel_blockreturn	emi_if.c	/^int emi_msg_send_highlevel_blockreturn(char *ipaddr, int msgnum,int send_size,void *send_data, int ret_size,void *ret_data, eu32 cmd){$/;"	f
+emi_msg_send_highlevel_nonblock	emi_if.c	/^int emi_msg_send_highlevel_nonblock(char *ipaddr, int msgnum,int send_size,void *send_data, eu32 cmd){$/;"	f
+emi_msg_unregister	emi_if.c	/^void emi_msg_unregister(eu32 defined_msg,emi_func func){$/;"	f
+emi_obtain_msg	emi_if.c	/^struct emi_msg *emi_obtain_msg(char *dest_ip,void *data,eu32 size,eu32 cmd,eu32 defined_msg,eu32 flag){$/;"	f
+emi_obtain_msg_space	include/shmem.h	58;"	d
+emi_open	emi_sock.c	/^struct sk_dpr *emi_open(int addr_family){$/;"	f
+emi_port	emi_sock.c	/^eu32 emi_port=0;$/;"	v
+emi_port	include/emi_config.h	/^	eu32 emi_port;$/;"	m	struct:emi_config
+emi_read	emi_sock.c	/^int emi_read(struct sk_dpr *sd,void *buf,eu32 size){$/;"	f
+emi_recieve_operation	emi_core.c	/^int emi_recieve_operation(void *args){$/;"	f
+emi_return_msg_space	include/shmem.h	59;"	d
+emi_sock_addr	include/emisocket.h	/^union emi_sock_addr {$/;"	u
+emi_transfer_buf	include/shmem.h	/^struct emi_transfer_buf{$/;"	s
+emi_unlock	include/emi_semaphore.h	/^static inline emi_unlock(elock_t *p){$/;"	f
+emi_unlock	include/emi_semaphore.h	/^static void inline emi_unlock(elock_t *p){$/;"	f
+emi_write	emi_sock.c	/^int emi_write(struct sk_dpr *sd,void *buf,eu32 size){$/;"	f
+emiprt	emi_if.c	43;"	d	file:
+emiprt	include/debug.h	34;"	d
+emiprt	include/debug.h	57;"	d
+es16	include/emi_types.h	/^typedef __es16 es16;$/;"	t
+es32	include/emi_types.h	/^typedef __es32 es32;$/;"	t
+es8	include/emi_types.h	/^typedef __es8 es8;$/;"	t
+eu16	include/emi_types.h	/^typedef __eu16 eu16;$/;"	t
+eu32	include/emi_types.h	/^typedef __eu32 eu32;$/;"	t
+eu8	include/emi_types.h	/^typedef __eu8 eu8;$/;"	t
+flag	include/emi.h	/^	eu32 flag;$/;"	m	struct:emi_msg
+func	emi_if.c	/^	emi_func func;$/;"	m	struct:func_list	file:
+func1	test/sar.c	/^int func1(struct emi_msg *tmp){$/;"	f
+func1	test/test.c	/^int func1(struct emi_msg *tmp){$/;"	f
+func2	test/sar.c	/^int func2(struct emi_msg *tmp){$/;"	f
+func2	test/test.c	/^int func2(struct emi_msg *tmp){$/;"	f
+func3	test/test.c	/^int func3(struct emi_msg *tmp){$/;"	f
+func_list	emi_if.c	/^struct func_list{$/;"	s	file:
+func_sterotype	emi_if.c	/^void func_sterotype(int no_use){$/;"	f
+get_config	emi_config.c	/^int get_config(struct emi_config *config){$/;"	f
+get_pid_max	emi_core.c	/^eu32 get_pid_max(void){$/;"	f
+id	include/emi.h	/^	eu32 id;$/;"	m	struct:emi_addr
+inet	include/emisocket.h	/^	struct sockaddr_in inet;$/;"	m	union:emi_sock_addr	typeref:struct:emi_sock_addr::sockaddr_in
+init_msg_table	emi_core.c	/^int init_msg_table(struct msg_map *table[]){$/;"	f
+int_global_shm_space	emi_core.c	/^int int_global_shm_space(int pid_max){$/;"	f
+ipv4	include/emi.h	/^	struct sockaddr_in	ipv4;$/;"	m	struct:emi_addr	typeref:struct:emi_addr::sockaddr_in
+l2cap	include/emi.h	/^	struct sockaddr_l2	l2cap;$/;"	m	struct:emi_addr	typeref:struct:emi_addr::sockaddr_l2
+list	emi_if.c	/^	struct list_head list;$/;"	m	struct:func_list	typeref:struct:func_list::list_head	file:
+list	include/shmem.h	/^	struct list_head list;$/;"	m	struct:emi_transfer_buf	typeref:struct:emi_transfer_buf::list_head
+list_add	include/list.h	/^static inline void list_add(struct list_head *new_lst, struct list_head *head)$/;"	f
+list_add_tail	include/list.h	/^static inline void list_add_tail(struct list_head *new_lst, struct list_head *head)$/;"	f
+list_del	include/list.h	/^static inline void list_del(struct list_head * entry)$/;"	f
+list_empty	include/list.h	/^static inline int list_empty(const struct list_head *head)$/;"	f
+list_entry	include/list.h	119;"	d
+list_first_entry	include/list.h	133;"	d
+list_for_each	include/list.h	147;"	d
+list_for_each_entry	include/list.h	169;"	d
+list_for_each_entry_tail	include/list.h	180;"	d
+list_for_each_tail	include/list.h	160;"	d
+list_head	include/list.h	/^struct list_head {$/;"	s
+list_is_last	include/list.h	/^static inline int list_is_last(const struct list_head *list,$/;"	f
+list_is_singular	include/list.h	/^static inline int list_is_singular(const struct list_head *head)$/;"	f
+list_move	include/list.h	/^static inline void list_move(struct list_head *list, struct list_head *head)$/;"	f
+list_move_tail	include/list.h	/^static inline void list_move_tail(struct list_head *list,$/;"	f
+list_replace	include/list.h	/^static inline void list_replace(struct list_head *old,$/;"	f
+lock_fd	emi_core.c	/^int lock_fd=-1;$/;"	v
+main	emi_core.c	/^int main(int argc,char **argv){$/;"	f
+main	test/sar.c	/^int main(int argc,char **argv){$/;"	f
+main	test/test.c	/^int main(int argc,char **argv){$/;"	f
+msg	emi_dbg.c	/^	char msg[128];$/;"	m	struct:msgandnum	file:
+msg	emi_if.c	/^	eu32 msg;$/;"	m	struct:func_list	file:
+msg	include/emi.h	/^	eu32 msg;$/;"	m	struct:emi_msg
+msg	include/msg_table.h	/^	eu32 msg;$/;"	m	struct:msg_map
+msg_map	include/msg_table.h	/^struct msg_map{$/;"	s
+msg_map_cmp	include/msg_table.h	/^static inline int msg_map_cmp(struct msg_map *map1,struct msg_map *map2){$/;"	f
+msg_map_fill	include/msg_table.h	/^static inline int msg_map_fill(struct msg_map *map,eu32 msg,pid_t pid){$/;"	f
+msg_map_lock	emi_shmem.c	/^elock_t msg_map_lock;$/;"	v
+msg_map_same	include/msg_table.h	/^static inline int msg_map_same(struct msg_map *map1,struct msg_map *map2){$/;"	f
+msg_table	emi_core.c	/^	struct msg_map **msg_table;$/;"	m	struct:clone_args	typeref:struct:clone_args::msg_map	file:
+msg_table	emi_core.c	/^struct msg_map *msg_table[EMI_MAX_MSG];$/;"	v	typeref:struct:msg_map
+msgandnum	emi_dbg.c	/^struct msgandnum{$/;"	s	file:
+msgtonum	emi_dbg.c	/^struct msgandnum msgtonum[]={$/;"	v	typeref:struct:msgandnum
+next	include/list.h	/^	struct list_head *next, *prev;$/;"	m	struct:list_head	typeref:struct:list_head::list_head
+next	include/msg_table.h	/^	struct msg_map *next;$/;"	m	struct:msg_map	typeref:struct:msg_map::msg_map
+num	emi_dbg.c	/^	eu32 num;$/;"	m	struct:msgandnum	file:
+obtain_space_msg_num	include/shmem.h	60;"	d
+offset	include/shmem.h	/^	eu32 offset;$/;"	m	struct:emi_transfer_buf
+offsetof	include/list.h	108;"	d
+offsetof	include/list.h	110;"	d
+pid	include/emi.h	/^	pid_t	pid;$/;"	m	struct:emi_addr
+pid	include/msg_table.h	/^	pid_t pid;$/;"	m	struct:msg_map
+prev	include/list.h	/^	struct list_head *next, *prev;$/;"	m	struct:list_head	typeref:struct:list_head::
+print_usage	emi_core.c	/^void print_usage(void){$/;"	f
+rcon	include/emi_aes.h	/^static const unsigned long rcon[] = {$/;"	v
+runing_check	emi_core.c	/^int runing_check(char *name){$/;"	f
+same_next	include/msg_table.h	/^	struct msg_map *same_next;$/;"	m	struct:msg_map	typeref:struct:msg_map::msg_map
+schedule_key	emi_aes.c	/^static int schedule_key(const unsigned char *key, int keylen, ulong32 *ekey,ulong32 *dkey){$/;"	f	file:
+sd	emi_core.c	/^	struct sk_dpr *sd;$/;"	m	struct:clone_args	typeref:struct:clone_args::sk_dpr	file:
+sd	emi_core.c	/^struct sk_dpr *sd=NULL;$/;"	v	typeref:struct:sk_dpr
+sem_id	emi_if.c	/^	int sem_id;$/;"	m	struct:emi_global	file:
+set_default_config	emi_config.c	/^void set_default_config(struct emi_config *config){$/;"	f
+setup_mix	emi_aes.c	/^unsigned long setup_mix(unsigned long temp){$/;"	f
+shm_id	emi_if.c	/^	int shm_id;$/;"	m	struct:emi_global	file:
+sig_handler	emi_core.c	/^void sig_handler(pid_t pid){$/;"	f
+sig_release	emi_core.c	/^void sig_release(pid_t pid){$/;"	f
+size	include/emi.h	/^	eu32 size;$/;"	m	struct:emi_msg
+size	include/shmem.h	/^	eu32 size;$/;"	m	struct:emi_transfer_buf
+sk_dpr	include/emisocket.h	/^struct sk_dpr {$/;"	s
+src_addr	include/emi.h	/^	struct emi_addr src_addr;$/;"	m	struct:emi_msg	typeref:struct:emi_msg::emi_addr
+ulong32	emi_aes.c	5;"	d	file:
+urandom_fd	emi_if.c	/^	int urandom_fd;$/;"	m	struct:emi_global	file:

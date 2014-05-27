@@ -1,0 +1,34 @@
+Copyright (C) 2009  david leels <davidontech@gmail.com>
+
+
+1. refer to test/test.c and test/sar.c to see how to use it. include/emiif.h may be also helpful.
+
+2. how to use the test application?
+	sar [-b] [-r registermsg] [-s addr [-m msg]] [-d data]/[-c commond]
+	so you can register a message sended by others by just typing this:
+		sar -r 1
+	that means that you register the number 1 message. then by typing in:
+		sar -s 127.0.0.1 -m 1 -d helloworld
+	you can send the number 1 message to whoever registered the same one in 127.0.0.1 .
+	if -b is used,that means you are going to test the blocking mode.
+
+	you can also do the simple test by inputing this:
+		test -1 
+	and
+		test -2
+
+3. from this version ,emilib supports both NONBLOCK and BLOCK mode,so the emi_msg->flag can be EMI_MSG_FLAG_BLOCK.
+
+4. to use this lib, emi_core may run first with the root authority. emi_core can be started and killed by start-stop-daemon, please refer to init/emi_core to dig more. another choise is 
+	emi_core -d
+   other choise is that you may run emi_core by normal user with -s attached.
+
+5. tools/clumi is used to clean the ipc resources if you happen to kill the emi_core illegal.
+
+6. for more supports, 
+	visit http://code.google.com/p/emilib/
+   or
+	mail to davidontech@gmail.com
+
+good luck
+
